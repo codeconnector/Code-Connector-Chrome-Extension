@@ -5,7 +5,7 @@ import Meetup from './components/meetup/meetup.js';
 import meetupData from './testData.js';
 
 function App() {
-  const [meetupData, setMeetupData] = useState("");
+  const [testData, setTestData] = useState("");
 
   useEffect(() => { 
     
@@ -16,12 +16,12 @@ function App() {
     const data = await fetch("/.netlify/functions/data"); 
     //const test = await data.json();
     console.log(data);
-    setMeetupData(data);
+    setTestData(data);
   }
 
   return (
     <main>
-      <header>Code Connector {meetupData}</header>
+      <header>Code Connector {testData}</header>
       <section className="display-meetups">
         {meetupData.map((data, id) => {
           return(
