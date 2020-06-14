@@ -14,8 +14,8 @@ h1 {
 }
 
 .container {
-    border-bottom-width: 2px;
+    border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #c7afd4;
-    padding-bottom: 1vh;
+    padding-bottom: 5vh;
 }
