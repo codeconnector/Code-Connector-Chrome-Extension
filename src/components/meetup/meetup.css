@@ -1,0 +1,21 @@
+
+.date-style {
+    color: rgb(126, 124, 124);
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.content-style {
+    font-family: Roboto;
+}
+
+h1 {
+    margin-top:0px;
+}
+
+.container {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #c7afd4;
+    padding-bottom: 5vh;
+}

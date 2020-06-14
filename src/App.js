@@ -1,25 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState} from 'react'
 import './App.css';
 
+import Meetup from './components/meetup/meetup.js';
+import meetupData from './testData.js';
+
 function App() {
+  //const [meetupData, setMeetupData] = useState([]);// 
+
+  const getMeetupData = async() => {
+    
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.sdsdsdsdsdsdsds
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <header>Code Connector</header>
+      <section className="display-meetups">
+        {meetupData.map((data, id) => {
+          return(
+            <Meetup date={data.date} time={data.time} title={data.title} content={data.content} rsvp={data.rsvp} />
+          )
+        })
+        }
+
+        <h3>
+          <a href="https://codeconnector.io/">Code Connector</a> is a non-profit that's organized tech meetups to help people 
+          start their journey into tech. You can join our daily conversations by clicking 
+          this link: <a href="https://bit.ly/2Ywnzqc">Code Connector slack channel</a>.
+        </h3>        
+      </section>  
+    </main>
   );
 }
 
