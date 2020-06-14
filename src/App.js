@@ -1,10 +1,11 @@
-import React, { useEffect} from 'react'
+import React, { useState, useEffect} from 'react'
 import './App.css';
 
 import Meetup from './components/meetup/meetup.js';
 import meetupData from './testData.js';
 
 function App() {
+  const [meetupData, setMeetupData] = useState("");
 
   useEffect(() => { 
     
@@ -12,13 +13,15 @@ function App() {
   }, []);
 
   const getMeetupData = async() => {
-    const data = await fetch("/.netlify/functions/devto"); 
+    const data = await fetch("/.netlify/functions/data"); 
+    //const test = await data.json();
     console.log(data);
+    setMeetupData(data);
   }
 
   return (
     <main>
-      <header>Code Connector</header>
+      <header>Code Connector {meetupData}</header>
       <section className="display-meetups">
         {meetupData.map((data, id) => {
           return(
@@ -38,3 +41,4 @@ function App() {
 }
 
 export default App;
+
