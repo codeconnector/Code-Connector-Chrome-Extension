@@ -2,6 +2,7 @@ import React, { useState} from 'react'
 import './App.css';
 
 import Meetup from './components/meetup/meetup.js';
+import meetupData from './testData.js';
 
 function App() {
   //const [meetupData, setMeetupData] = useState([]);// 
@@ -14,7 +15,12 @@ function App() {
     <main>
       <header>Code Connector</header>
       <section className="display-meetups">
-        <Meetup />
+        {meetupData.map((data, id) => {
+          return(
+            <Meetup date={data.date} time={data.time} title={data.title} content={data.content} rsvp={data.rsvp} />
+          )
+        })
+        }        
       </section>  
     </main>
   );
