@@ -1,14 +1,19 @@
-import React, { useState} from 'react'
+import React, { useEffect} from 'react'
 import './App.css';
 
 import Meetup from './components/meetup/meetup.js';
 import meetupData from './testData.js';
 
 function App() {
-  //const [meetupData, setMeetupData] = useState([]);// 
+
+  useEffect(() => { 
+    
+    getMeetupData(); 
+  }, []);
 
   const getMeetupData = async() => {
-    
+    const data = await fetch("/.netlify/functions/devto"); 
+    console.log(data);
   }
 
   return (
