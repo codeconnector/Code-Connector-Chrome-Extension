@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState} from 'react'
 import './App.css';
 
+import Meetup from './components/meetup/meetup.js';
+
 function App() {
+  //const [meetupData, setMeetupData] = useState([]);// 
+
+  const getMeetupData = async() => {
+    
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.sdsdsdsdsdsdsds
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <header>Code Connector</header>
+      <section className="display-meetups">
+        <Meetup />
+      </section>  
+    </main>
   );
 }
 
