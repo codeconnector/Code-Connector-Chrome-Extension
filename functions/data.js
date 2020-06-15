@@ -1,4 +1,4 @@
-const data = [
+const events = [
   {
       date:"June 22, 2020",
       time:"12pm CST",
@@ -46,6 +46,6 @@ const data = [
 exports.handler = function(event, context, callback) {
     callback(null, {
       statusCode: 200,
-      body: JSON.stringify({msg: "Hello World"})
+      body: JSON.stringify({msg: events})
     });
   };
