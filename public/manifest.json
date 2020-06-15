@@ -1,6 +1,16 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "manifest_version": 2,
+  "short_name": "Code Connector Meetups",
+  "description": "Google Chrome extension that list all current Code Connector meetups",
+  "name": "Code Connector Meetups List",
+  "version": "1.0",
+  "author": "JC Smiley",
+  "browser_action": {
+    "default_icon": "favicon.ico",
+    "default_title": "Code Connector Meetups",
+    "default_popup": "index.html"
+  },
+  "permissions": ["activeTab"],
   "icons": [
     {
       "src": "favicon.ico",
