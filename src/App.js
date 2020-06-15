@@ -13,15 +13,15 @@ function App() {
   }, []);
 
   const getMeetupData = async() => {
-    const data = await fetch("/.netlify/functions/data"); 
-    //const test = await data.json();
+    const response = await fetch("/.netlify/functions/data"); 
+    const data = await response.json();
     console.log(data);
-    setTestData(data);
+    setTestData(data.body);
   }
 
   return (
     <main>
-      <header>Code Connector {testData}</header>
+      <header>Code Connector</header>
       <section className="display-meetups">
         {meetupData.map((data, id) => {
           return(
