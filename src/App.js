@@ -14,6 +14,7 @@ function App() {
 
   const getMeetupData = async() => {
     const data = await fetch("/.netlify/functions/data"); 
+    console.log(data);
     const test = await JSON.parse(data);
     console.log(test);
     //setTestData(data);
