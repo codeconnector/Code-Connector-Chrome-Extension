@@ -1,5 +1,8 @@
 exports.handler = async (event, context) => {
-  return {
+
+  const response = {
     body: "Hello, World"
   };
+  
+  return JSON.stringify(response);
 };

@@ -16,7 +16,7 @@ function App() {
     const response = await fetch("/.netlify/functions/data"); 
     const data = await response.json();
     console.log(data);
-    setTestData(data.body);
+    //setTestData(data.body);
   }
 
   return (
