@@ -13,10 +13,11 @@ function App() {
   }, []);
 
   const getMeetupData = async() => {
-    const data = await fetch("/.netlify/functions/data"); 
-    //const test = await data.json();
+    const res = await fetch("/.netlify/functions/data"); 
+    const data = await res.json();
     console.log(data);
-    //setTestData(data);
+    //const test = JSON.parse(data);
+    //console.log(test);
   }
 
   return (
