@@ -1,7 +1,7 @@
 header {
   background-color: #8f13d8;
   text-align: center;
-  color:white;
+  color: white;
   font-weight: bold;
   font-family: Roboto;
   padding: 5px 0px 5px 0px;
@@ -9,5 +9,9 @@ header {
 
 .display-meetups {
   padding: 0px 35px 20px 35px;
+}
 
+main {
+  height: 900px;
+  width: 600px;
 }
