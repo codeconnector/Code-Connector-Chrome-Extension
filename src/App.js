@@ -1,11 +1,11 @@
-import React, { useEffect} from 'react'
+import React, {useState, useEffect} from 'react'
 import './App.css';
 
 import Meetup from './components/meetup/meetup.js';
-import meetupData from './testData.js';
+//import meetupData from './testData.js';
 
 function App() {
-  //const [eventData, setEventData] = useState("");
+  const [eventData, setEventData] = useState([]);
 
   useEffect(() => { 
     
@@ -15,19 +15,17 @@ function App() {
   const getMeetupData = async() => {
     const res = await fetch("/.netlify/functions/data"); 
     const data = await res.json();
-    console.log(data);
     console.log(data.msg);
-    //const test = JSON.parse(data);
-    //console.log(test);
+    setEventData(data.msg);
   }
 
   return (
     <main>
       <header>Code Connector</header>
       <section className="display-meetups">
-        {meetupData.map((data, id) => {
+        {eventData.map((data, id) => {
           return(
-            <Meetup date={data.date} time={data.time} title={data.title} content={data.content} rsvp={data.rsvp} />
+            <Meetup key={id} date={data.date} time={data.time} title={data.title} content={data.content} rsvp={data.rsvp} />
           )
         })
         }
