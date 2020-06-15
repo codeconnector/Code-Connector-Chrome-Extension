@@ -5,7 +5,7 @@ import Meetup from './components/meetup/meetup.js';
 import meetupData from './testData.js';
 
 function App() {
-  //const [testData, setTestData] = useState("");
+  //const [eventData, setEventData] = useState("");
 
   useEffect(() => { 
     
