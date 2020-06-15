@@ -21,7 +21,7 @@ function App() {
 
   return (
     <main>
-      <header>Code Connector {testData}</header>
+      <header>Code Connector</header>
       <section className="display-meetups">
         {meetupData.map((data, id) => {
           return(
