@@ -49,13 +49,16 @@ exports.handler = function(event, context, callback) {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Headers': 'Content-Type',
     'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE'
-    };*/
+    };
+
+    headers: {
+    'content-type': 'application/json',
+    'Access-Control-Allow-Origin': '*',
+    },
+    
+    */
     callback(null, {
       statusCode: 200,
-      headers: {
-        'content-type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-      },
       body: JSON.stringify({msg: events})
     });
   };
