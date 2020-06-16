@@ -26,11 +26,26 @@ function App() {
     <main>
       <header>Code Connector</header>
       <section className="display-meetups">
-        {(eventData.length === 0 || eventData === undefined) &&          
+        {(meetupData.length === 0 || meetupData === undefined) &&          
             <div><h1>Loading</h1></div>          
         }
 
         {meetupData.map((data, id) => {
+          if(id === 0){
+            return(
+              <Meetup
+              key={id}
+              date={data.date}
+              time={data.time}
+              title={data.title}
+              content={data.content}
+              link={data.link}
+              rsvp={data.rsvp}
+              current={true}
+            />
+            );
+          }
+
           return (
             <Meetup
               key={id}
