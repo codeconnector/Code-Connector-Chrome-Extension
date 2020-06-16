@@ -11,5 +11,8 @@
     "default_popup": "index.html"
   },
   "content_security_policy": "script-src 'self' 'sha256-2E0339kejcu4wULkF10Hr/h9FDvfdH3pjwo7uSt3LZA'; object-src 'self'",
-  "permissions": ["activeTab"]
+  "permissions": [
+    "activeTab",
+    "https://sad-neumann-49112b.netlify.app/.netlify/functions/data"
+  ]
 }
