@@ -38,6 +38,7 @@ function App() {
               time={data.time}
               title={data.title}
               content={data.content}
+              link={data.link}
               rsvp={data.rsvp}
             />
           );
