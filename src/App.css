@@ -3,8 +3,9 @@ header {
   text-align: center;
   color: white;
   font-weight: bold;
+  font-size: 32px;
   font-family: Roboto;
-  padding: 5px 0px 5px 0px;
+  padding: 15px 0px 15px 0px;
 }
 
 .display-meetups {
