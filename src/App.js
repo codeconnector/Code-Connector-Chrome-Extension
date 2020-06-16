@@ -24,6 +24,10 @@ function App() {
     <main>
       <header>Code Connector</header>
       <section className="display-meetups">
+        {(eventData.length === 0 || eventData === undefined) &&          
+            <div><h1>Loading</h1></div>          
+        }
+
         {eventData.map((data, id) => {
           return (
             <Meetup
