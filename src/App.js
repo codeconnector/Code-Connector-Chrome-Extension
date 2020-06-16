@@ -22,6 +22,15 @@ function App() {
     */
   };
 
+  const checkIfPastTodayDate = (date) => {
+    const meetupDate = Date.parse(date);
+    const todayDate = Date.parse(new Date());
+    if(meetupDate < todayDate){
+      return false;
+    }
+    return true;
+  }
+
   return (
     <main>
       <header>Code Connector</header>
@@ -30,34 +39,41 @@ function App() {
             <div><h1>Loading</h1></div>          
         }
 
-        {meetupData.map((data, id) => {
-          if(id === 0){
-            return(
-              <Meetup
-              key={id}
-              date={data.date}
-              time={data.time}
-              title={data.title}
-              content={data.content}
-              link={data.link}
-              rsvp={data.rsvp}
-              current={true}
-            />
-            );
-          }
+        {meetupData
+          .filter((meetup)=> {
+            if(checkIfPastTodayDate(meetup.date)){
+              return meetup
+            }
+          })
+        
+          .map((data, id) => {
+            if(id === 0){
+              return(
+                <Meetup
+                key={id}
+                date={data.date}
+                time={data.time}
+                title={data.title}
+                content={data.content}
+                link={data.link}
+                rsvp={data.rsvp}
+                current={true}
+              />
+              );
+            }
 
-          return (
-            <Meetup
-              key={id}
-              date={data.date}
-              time={data.time}
-              title={data.title}
-              content={data.content}
-              link={data.link}
-              rsvp={data.rsvp}
-            />
-          );
-        })}
+            return (
+              <Meetup
+                key={id}
+                date={data.date}
+                time={data.time}
+                title={data.title}
+                content={data.content}
+                link={data.link}
+                rsvp={data.rsvp}
+              />
+            );
+          })}
 
         <p>
           <a href="https://codeconnector.io/">Code Connector</a> is a non-profit

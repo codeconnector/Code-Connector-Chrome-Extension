@@ -1,5 +1,13 @@
 const data = [
     {
+        date:"June 15, 2020",
+        time:"12pm CST",
+        title:"Happy Lunch Hour",
+        content:"If you're interested in meeting with other developers and chatting about tech, life, etc. during your lunch break, you're more than welcome join us at our virtual table",
+        link:"https://us02web.zoom.us/j/82897733166",
+        rsvp:false
+    },
+    {
         date:"June 22, 2020",
         time:"12pm CST",
         title:"Happy Lunch Hour",
