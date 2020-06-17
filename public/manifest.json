@@ -1,25 +1,18 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "manifest_version": 2,
+  "short_name": "Code Connector Meetups",
+  "description": "Google Chrome extension that list all current Code Connector meetups",
+  "name": "Code Connector Meetups List",
+  "version": "1.0",
+  "author": "JC Smiley",
+  "browser_action": {
+    "default_icon": "favicon.ico",
+    "default_title": "Code Connector Meetups",
+    "default_popup": "index.html"
+  },
+  "content_security_policy": "script-src 'self' 'sha256-2E0339kejcu4wULkF10Hr/h9FDvfdH3pjwo7uSt3LZA'; object-src 'self'",
+  "permissions": [
+    "activeTab",
+    "https://sad-neumann-49112b.netlify.app/.netlify/functions/data"
+  ]
 }
