@@ -41,9 +41,7 @@ function App() {
 
         {eventData
           .filter((meetup)=> {
-            if(checkIfPastTodayDate(meetup.date)){
-              return meetup
-            }
+            return checkIfPastTodayDate(meetup.date)
           })
         
           .map((data, id) => {
