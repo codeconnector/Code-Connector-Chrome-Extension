@@ -1,14 +1,20 @@
 {
   "manifest_version": 2,
   "short_name": "Code Connector Meetups",
-  "description": "Google Chrome extension that list all current Code Connector meetups",
-  "name": "Code Connector Meetups List",
+  "description": "Display a calendar of Code Connector meetups",
+  "name": "Code Connector Meetups Calendar",
   "version": "1.0",
   "author": "JC Smiley",
   "browser_action": {
-    "default_icon": "favicon.ico",
+    "default_icon": "cc-brand-16.png",
     "default_title": "Code Connector Meetups",
     "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "cc-brand-16.png",
+    "32": "cc-brand-32.png",
+    "48": "cc-brand-48.png",
+    "128": "cc-brand-128.png"
   },
   "content_security_policy": "script-src 'self' 'sha256-2E0339kejcu4wULkF10Hr/h9FDvfdH3pjwo7uSt3LZA'; object-src 'self'",
   "permissions": [
