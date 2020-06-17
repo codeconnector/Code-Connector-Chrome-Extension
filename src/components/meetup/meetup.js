@@ -11,7 +11,7 @@ const Meetup = (props) => {
                 <a href={props.link}>Look Forward to seeing you. Click to RSVP</a>
             }
             {!props.rsvp &&
-                <a href={props.link}>Click to join Zoom meetup at {props.time}</a>
+                <a href={props.link} target="_blank" rel="noopener noreferrer">Click to join Zoom meetup at {props.time}</a>
             }
             
         </div>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 
 import Meetup from "./components/meetup/meetup.js";
-//import meetupData from './testData.js';
+//import meetupData from './testData.js';//For testing
 
 function App() {
   const [eventData, setEventData] = useState([]);
