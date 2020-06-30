@@ -17,7 +17,6 @@ function App() {
       "https://sad-neumann-49112b.netlify.app/.netlify/functions/data"
     );
     const data = await res.json();
-    console.log(data.msg);
     setEventData(data.msg);
     
   };
