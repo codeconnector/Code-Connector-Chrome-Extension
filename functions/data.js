@@ -20,7 +20,7 @@ const events = [
         time:"6:30pm CST",
         title:"Code Co-op",
         content:"Plain and simple, Code Co-op is a help and hack night focused in on connecting people with better opportunities through collaboration and conversation. This isn't a class, but it is your opportunity to talk with other people in the community and get help jumpstarting your learning process or with a programming lesson / personal project you've been working on.",
-        link:"https://www.meetup.com/memphis-technology-user-groups/events/nkpvsrybclbmb/",
+        link:"https://www.meetup.com/memphis-technology-user-groups/events/sdnpsrybckblc/",
         rsvp:true
     },
 
@@ -75,19 +75,6 @@ const events = [
 ];
 
 exports.handler = function(event, context, callback) {
-    /* To enable CORS
-    const headers = {
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Headers': 'Content-Type',
-    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE'
-    };
-
-    headers: {
-    'content-type': 'application/json',
-    'Access-Control-Allow-Origin': '*',
-    },
-    
-    */
     callback(null, {
       statusCode: 200,
       body: JSON.stringify({msg: events})
