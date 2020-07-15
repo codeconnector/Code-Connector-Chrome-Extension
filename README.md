@@ -19,7 +19,7 @@ The purpose is to display upcoming Code Connector tech meetups. There is current
 This project was used to practice developing a chrome extension in preparation of working on the VEVA.ai startup extension project.
 
 ### Install
-Click to install on a Chrome Browser: [Code Connector Meetup Google Chrome Extension](https://www.notion.so/Code-Connector-Meetup-Google-Chrome-Extension-3815d08abcfe43118727f967f83899ac)
+Click to install on a Chrome Browser: [Code Connector Meetup Google Chrome Extension](https://chrome.google.com/webstore/detail/code-connector-meetups-ca/nonnkmloihklfojffnmkedkdeccdnhhf/related?hl=en)
 
 ### WireFrame
 
