@@ -5,20 +5,20 @@
 ### Table of Contents
 1. Purpose
 2. Motivation
-3. Install
+3. How to Install
 4. Wireframe
 5. Technologies Used
 6. License
 
 
 ### Purpose:
-The purpose is to display upcoming Code Connector tech meetups. There is currently three virtual meetups a month. 
+The purpose is to display upcoming Code Connector tech meetups. There is currently three virtual meetups a month. Another goal was to pracice using Netlify as a serverless backend service. 
 
 ### Motivation:
 
 This project was used to practice developing a chrome extension in preparation of working on the VEVA.ai startup extension project.
 
-### Install
+### How to Install
 Click to install on a Chrome Browser: [Code Connector Meetup Google Chrome Extension](https://chrome.google.com/webstore/detail/code-connector-meetups-ca/nonnkmloihklfojffnmkedkdeccdnhhf/related?hl=en)
 
 ### WireFrame
@@ -26,6 +26,8 @@ Click to install on a Chrome Browser: [Code Connector Meetup Google Chrome Exten
 ![Screen-shot of Wireframe in use](./assets/extension-1a.png)
 
 ### This app was built with the following technologies:
+
+**Netlify:** Web developer platform for hosting infrastructure, continuous integration, deployment pipeline with GitHub, and serverless backend services.
 
 **GitHub:** Web-based version control repository and Internet hosting service
 
