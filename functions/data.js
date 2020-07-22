@@ -19,7 +19,7 @@ const events = [
         date:"July 28, 2020",
         time:"6:30pm CST",
         title:"Code Co-op",
-        content:"Plain and simple, Code Co-op is a help and hack night focused in on connecting people with better opportunities through collaboration and conversation. This isn't a class, but it is your opportunity to talk with other people in the community and get help jumpstarting your learning process or with a programming lesson / personal project you've been working on.",
+        content:"Sr. Agile Coach Steve Hallman will be giving an inspiring talk on using Trello for personal projects or in an Agile professional environment!",
         link:"https://www.meetup.com/memphis-technology-user-groups/events/sdnpsrybckblc/",
         rsvp:true
     },
@@ -68,7 +68,7 @@ const events = [
         date:"August 25, 2020",
         time:"6:30pm CST",
         title:"Code Co-op",
-        content:"Plain and simple, Code Co-op is a help and hack night focused in on connecting people with better opportunities through collaboration and conversation. This isn't a class, but it is your opportunity to talk with other people in the community and get help jumpstarting your learning process or with a programming lesson / personal project you've been working on.",
+        content:"This month we are presenting several lighting talks by multiple speakers such as Azhya Knox 'The Game Plan into Developer Land' and Matt Karmazyn 'Measuring the Success of DevOps in your Organization'.",
         link:"https://www.meetup.com/memphis-technology-user-groups/events/sdnpsrybclbhc/",
         rsvp:true
     },
