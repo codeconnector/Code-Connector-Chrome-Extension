@@ -1,6 +1,6 @@
 import React from 'react';
 import "./meetup.css";
-const { DateTime } = require("luxon");
+import {DateTime} from 'luxon'
 
 const Meetup = (props) => {
     const newDate = () => {
