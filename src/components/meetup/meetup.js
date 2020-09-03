@@ -3,13 +3,11 @@ import "./meetup.css";
 import {DateTime} from 'luxon'
 
 const Meetup = (props) => {
-    const newDate = () => {
-        const test = props.date.split(",");
-        var dt = DateTime.local(Number(test[0]), Number(test[1]), Number(test[2]), Number(test[3]), Number(test[4]));
-        const dateOfEvent = dt.toLocaleString(DateTime.DATETIME_FULL)
-        return dateOfEvent
-    }
-    
+    const newDate = () => { 
+        var dt = DateTime.local(props.date[0], props.date[1], props.date[2], props.date[3], props.date[4]); 
+        return dt.toLocaleString(DateTime.DATETIME_FULL)
+    } 
+
     return(
         <div className={props.current?'container currentMeetup':'container'}>
             <p className="date-style">{newDate()}</p>
