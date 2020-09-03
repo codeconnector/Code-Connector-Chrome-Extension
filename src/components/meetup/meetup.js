@@ -4,7 +4,8 @@ import {DateTime} from 'luxon'
 
 const Meetup = (props) => {
     const newDate = () => {
-        var dt = DateTime.local(Number(props.date[0]), Number(props.date[1]), Number(props.date[2]), Number(props.date[3]), Number(props.date[4]));
+        const test = props.date.split(",");
+        var dt = DateTime.local(Number(test[0]), Number(test[1]), Number(test[2]), Number(test[3]), Number(test[4]));
         const dateOfEvent = dt.toLocaleString(DateTime.DATETIME_FULL)
         return dateOfEvent
     }
