@@ -3,7 +3,7 @@
   "short_name": "Code Connector Meetups",
   "description": "Display a calendar of Code Connector meetups",
   "name": "Code Connector Meetups Calendar",
-  "version": "1.2",
+  "version": "1.2.1",
   "author": "JC Smiley",
   "browser_action": {
     "default_icon": "cc-brand-16.png",
