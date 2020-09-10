@@ -12,13 +12,11 @@ function App() {
   }, []);
 
   const getMeetupData = async () => {
-    
     const res = await fetch(
       "https://sad-neumann-49112b.netlify.app/.netlify/functions/data"
     );
-    const data = await res.json();
-    setEventData(data.msg);
-    
+    const {events} = await res.json();
+    setEventData(events);
   };
 
   const checkIfPastTodayDate = (date) => {
@@ -40,26 +38,10 @@ function App() {
 
         {eventData
           .filter((meetup)=> {
-            return checkIfPastTodayDate(meetup.testDate)
+            return checkIfPastTodayDate(meetup.date)
           })
-        
           .map((data, id) => {
-            if(id === 0){
-              return(
-                <Meetup
-                key={id}
-                date={data.date}
-                time={data.time}
-                title={data.title}
-                content={data.content}
-                link={data.link}
-                rsvp={data.rsvp}
-                current={true}
-              />
-              );
-            }
-
-            return (
+            return(
               <Meetup
                 key={id}
                 date={data.date}
@@ -68,6 +50,7 @@ function App() {
                 content={data.content}
                 link={data.link}
                 rsvp={data.rsvp}
+                current={id === 0 ? true : false}
               />
             );
           })}
