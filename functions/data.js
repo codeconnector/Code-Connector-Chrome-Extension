@@ -43,8 +43,8 @@ const events = [
     },
     {
         date: new Date("22 September 2020 18:30:00 CDT").toJSON(),
-        title:"Code Co-op",
-        content:"This month we are presenting several lighting talks by multiple speakers such as Azhya Knox 'The Game Plan into Developer Land' and Matt Karmazyn 'Measuring the Success of DevOps in your Organization'.",
+        title:"Code Co-op | Resume Workshop",
+        content:"Our workshop consists of a panel of devs here to help! The panel includes James Quick, RJ Beers, Steve Hallman and Danny Thompson. Each panelist will take 10-15 minutes to review 2 resumes and share good things they observe as well as areas for improvement.",
         link:"https://www.meetup.com/memphis-technology-user-groups/events/wbgfwrybcmbdc/",
         rsvp:true
     },
