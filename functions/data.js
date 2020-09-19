@@ -48,6 +48,13 @@ const events = [
         link:"https://www.meetup.com/memphis-technology-user-groups/events/wbgfwrybcmbdc/",
         rsvp:true
     },
+    {
+        date: new Date("22 October 2020 13:00:00 CDT").toJSON(),
+        title:"Code Together | Hacktoberfest Kickoff",
+        content:"Join us to learn about Digital Ocean’s Hacktoberfest event, hear from Code Connector members and their projects you can contribute to, or give a shout out to your own project!",
+        link:"https://www.meetup.com/memphis-technology-user-groups/events/xlvhwrybcnbfb/",
+        rsvp:true
+    },
 ];
 
 exports.handler = function(event, context, callback) {
