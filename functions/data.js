@@ -1,3 +1,4 @@
+// Tip: Remember in the fall, after Nov. 1 to change from CDT TO CST. In the spring, to change back when time move forward. 
 const events = [
     {
         date: new Date("28 September 2020 12:00:00 CDT").toJSON(),
@@ -56,7 +57,7 @@ const events = [
         rsvp:true
     },
     {
-        date: new Date("2 November 2020 12:00:00 CDT").toJSON(),
+        date: new Date("2 November 2020 12:00:00 CST").toJSON(),
         title:"Happy Lunch Hour",
         content:"If you're interested in meeting with other developers and chatting about tech, life, etc. during your lunch break, you're more than welcome join us at our virtual table",
         link:"https://www.meetup.com/memphis-technology-user-groups/events/jtjlwrybcpbdb/",
