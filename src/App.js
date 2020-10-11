@@ -22,7 +22,8 @@ function App() {
   };
 
   const checkIfPastTodayDate = (date) => {
-    const meetupDate = Date.parse(date);
+    const hourInMillieSeconds = 60 *60000 //allow meetup one hour grace before being removed 
+    const meetupDate = Date.parse(date) + hourInMillieSeconds;
     const todayDate = Date.parse(new Date());
     if(meetupDate < todayDate){
       return false;
