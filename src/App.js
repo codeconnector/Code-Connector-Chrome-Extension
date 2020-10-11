@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 
 import Meetup from "./components/meetup/meetup.js";
-import meetupData from './testData.js';//For testing
+//import meetupData from './testData.js';//For testing
 
 function App() {
   const [eventData, setEventData] = useState([]);
@@ -12,18 +12,18 @@ function App() {
   }, []);
 
   const getMeetupData = async () => {
-    /*
+    
     const res = await fetch(
       "https://sad-neumann-49112b.netlify.app/.netlify/functions/data"
     );
     const {events} = await res.json();
-    */
-    setEventData(meetupData);
+    
+    setEventData(events);
   };
 
   const checkIfPastTodayDate = (date) => {
-    const hourInMillieSeconds = 60 *60000 //allow meetup one hour grace before being removed 
-    const meetupDate = Date.parse(date) + hourInMillieSeconds;
+    const minutesInMillieSeconds = 60 *60000; //allow meetup one hour grace before being removed 
+    const meetupDate = Date.parse(date) +  minutesInMillieSeconds;
     const todayDate = Date.parse(new Date());
     if(meetupDate < todayDate){
       return false;
@@ -48,7 +48,6 @@ function App() {
               <Meetup
                 key={id}
                 date={data.date}
-                time={data.time}
                 title={data.title}
                 content={data.content}
                 link={data.link}
