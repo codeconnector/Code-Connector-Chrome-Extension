@@ -8,7 +8,7 @@ const Meetup = ({date, time, current, title, rsvp, link, content}) => {
             <h1>{title}</h1>
             <p className="content-style">{content}</p>
             {rsvp &&
-                <a href={link}>Look Forward to seeing you. Click to RSVP</a>
+                <a href={link} target="_blank" rel="noopener noreferrer">Look Forward to seeing you. Click to RSVP</a>
             }
             {!rsvp &&
                 <a href={link} target="_blank" rel="noopener noreferrer">Click to join Zoom meetup at {time}</a>
