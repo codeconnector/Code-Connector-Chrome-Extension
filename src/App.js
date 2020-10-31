@@ -33,7 +33,7 @@ function App() {
 
   return (
     <main>
-      <header>Code Connector</header>
+      <header data-testid="header">Code Connector</header>
       <section className="display-meetups">
         {(eventData.length === 0 || eventData === undefined) &&          
             <div><h1>Loading</h1></div>          
