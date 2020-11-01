@@ -58,10 +58,10 @@ function App() {
           })}
 
         <p>
-          <a href="https://codeconnector.io/" target="_blank">Code Connector</a> is a non-profit
+          <a href="https://codeconnector.io/" target="_blank" rel="noreferrer">Code Connector</a> is a non-profit
           that's organized tech meetups to help people start their journey into
           tech. You can join our daily conversations by clicking this link:{" "}
-          <a href="https://bit.ly/2Ywnzqc" target="_blank">Code Connector slack channel</a>.
+          <a href="https://bit.ly/2Ywnzqc" target="_blank" rel="noreferrer">Code Connector slack channel</a>.
         </p>
       </section>
     </main>
