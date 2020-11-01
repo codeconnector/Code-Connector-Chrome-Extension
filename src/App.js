@@ -14,7 +14,7 @@ function App() {
   const getMeetupData = async () => {
     
     const res = await fetch(
-      "https://sad-neumann-49112b.netlify.app/.netlify/functions/data"
+      `${process.env.REACT_APP_LAMBDA_BASE_URL}/data`
     );
     const {events} = await res.json();
     
