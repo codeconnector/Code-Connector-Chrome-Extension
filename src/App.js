@@ -14,7 +14,7 @@ function App() {
   const getMeetupData = async () => {
     
     const res = await fetch(
-      "https://sad-neumann-49112b.netlify.app/.netlify/functions/data"
+      `${process.env.REACT_APP_LAMBDA_BASE_URL}/data`
     );
     const {events} = await res.json();
     
@@ -33,7 +33,7 @@ function App() {
 
   return (
     <main>
-      <header>Code Connector</header>
+      <header data-testid="header">Code Connector</header>
       <section className="display-meetups">
         {(eventData.length === 0 || eventData === undefined) &&          
             <div><h1>Loading</h1></div>          
@@ -58,10 +58,10 @@ function App() {
           })}
 
         <p>
-          <a href="https://codeconnector.io/">Code Connector</a> is a non-profit
+          <a href="https://codeconnector.io/" target="_blank" rel="noreferrer">Code Connector</a> is a non-profit
           that's organized tech meetups to help people start their journey into
           tech. You can join our daily conversations by clicking this link:{" "}
-          <a href="https://bit.ly/2Ywnzqc">Code Connector slack channel</a>.
+          <a href="https://bit.ly/2Ywnzqc" target="_blank" rel="noreferrer">Code Connector slack channel</a>.
         </p>
       </section>
     </main>
