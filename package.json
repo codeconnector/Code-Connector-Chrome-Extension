@@ -9,7 +9,7 @@
     "netlify-cli": "^2.67.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "^4.0.0"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "dev": "netlify dev",
